@@ -1,4 +1,3 @@
-version: "3"
 services:
     proxy:
         image: nginx:latest
@@ -12,5 +11,4 @@ services:
             - test
 networks:
     test:
-        external:
-            name: test
+        external: true
